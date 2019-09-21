@@ -11,17 +11,17 @@ def calc():
     else:
         if operation == "+":
             result = first_number + second_number
-            print(f"Результат:  {result}")
+            print(f"Результат: {first_number} {operation} {second_number} = {result}")
         elif operation == "-":
             result = first_number - second_number
-            print(f"Результат:  {result}")
+            print(f"Результат: {first_number} {operation} {second_number} =  {result}")
         elif operation == "*":
             result = first_number * second_number
-            print(f"Результат:  {result}")
+            print(f"Результат: {first_number} {operation} {second_number} =  {result}")
         else:
             if second_number != 0 and operation == "/":
                 result = first_number / second_number
-                print(f"Результат:  {result}")
+                print(f"Результат: {first_number} {operation} {second_number} =  {result}")
             else:
                 if second_number == 0:
                     print("Ділення на 0, трошки поміркуй!")
@@ -29,4 +29,3 @@ def calc():
                     print("Щось не те ввів, поміркуй")
                     calc()
 calc()
-
