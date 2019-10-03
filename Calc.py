@@ -17,7 +17,7 @@ def calc(first_number, second_number, operation='+'):
                 return first_number / second_number
         else:
             if operation in ('+', '-', '*', '/'):
-                return operation
+                return operation#What for?
             else:
                 return "Щось не те ввів, поміркуй"
 
