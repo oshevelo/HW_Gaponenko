@@ -12,7 +12,7 @@ if __name__ == '__main__':
     else:
 
         if number_operation > 0:
-            i = 2
+            i = 2#FIXME: if i enter 2 as number_operation what will be?
 
             first_number = input("Введіть перше число: \t")
             operation = input("Оберіть операцію: Додавння(+), Віднімання(-), Множення(*), Ділення(/) \t")
@@ -29,7 +29,7 @@ if __name__ == '__main__':
                     first_number = result
                     operation = input("Оберіть операцію: Додавння(+), Віднімання(-), Множення(*), Ділення(/) \t")
                     second_number = input("Введіть наступне число: \t")
-                    if isinstance(result, str):
+                    if isinstance(result, str):#seems it should be AFTER calculation in str37
                         break
                     if operation not in ("+", "-", "*", "/"):
                         break
